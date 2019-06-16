@@ -1,6 +1,7 @@
 FROM ubuntu:18.04
 MAINTAINER ngshya
 COPY startup /
+RUN chmod +x /startup
 RUN echo "root:root" | chpasswd
 RUN useradd -m -s /bin/bash user
 RUN echo "user:user" | chpasswd
