@@ -20,6 +20,7 @@ RUN apt -y install htop \
  openssh-server
 RUN wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.2.1335-amd64.deb
 RUN gdebi -n rstudio-server-1.2.1335-amd64.deb
+RUN rm rstudio-server-1.2.1335-amd64.deb
 RUN echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
 RUN echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 ENTRYPOINT /startup
