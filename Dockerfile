@@ -25,6 +25,6 @@ RUN systemctl enable ssh
 RUN service ssh start
 RUN /etc/init.d/rstudio-server stop
 RUN /etc/init.d/rstudio-server start
-CMD bash
+CMD while true; do sleep 1d; done
 
  
