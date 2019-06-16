@@ -12,8 +12,10 @@ RUN apt -y install htop \
  r-base-dev \
  r-recommended \
  gdebi-core \
- wget
+ wget \
+ openssh-server
 RUN wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.2.1335-amd64.deb
 RUN gdebi -n rstudio-server-1.2.1335-amd64.deb
+RUN systemctl enable ssh
 EXPOSE 8787
  
