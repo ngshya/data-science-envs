@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 MAINTAINER ngshya
-COPY startup /startup
+COPY startup /
 RUN echo "root:root" | chpasswd
 RUN useradd -m -s /bin/bash user
 RUN echo "user:user" | chpasswd
@@ -22,4 +22,4 @@ RUN wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.2.13
 RUN gdebi -n rstudio-server-1.2.1335-amd64.deb
 RUN echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
 RUN echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
-ENTRTYPOINT /startup.sh
+ENTRYPOINT /startup
