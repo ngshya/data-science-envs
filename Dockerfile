@@ -3,5 +3,8 @@ RUN apt update
 RUN apt dist-upgrade -y
 RUN apt -y install python3-pip \
  nano \
- git
+ git \
+ r-base \
+ r-base-dev \
+ r-recommended
  
