@@ -1,0 +1,7 @@
+#!/bin/bash
+
+systemctl enable ssh
+service ssh start
+/etc/init.d/rstudio-server stop
+/etc/init.d/rstudio-server start
+# while true; do sleep 1d; done
