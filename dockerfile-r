@@ -14,6 +14,10 @@ RUN apt -y install htop \
  git \
  r-base \
  r-base-dev \
+ r-cran-data.table \
+ r-cran-dplyr \
+ r-cran-caret \
+ r-cran-randomforest \
  gdebi-core \
  wget \
  openssh-server
