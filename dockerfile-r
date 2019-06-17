@@ -18,6 +18,18 @@ RUN apt -y install htop \
  r-cran-dplyr \
  r-cran-caret \
  r-cran-randomforest \
+ r-cran-tidyr \
+ r-cran-stringr \
+ r-cran-lubridate \
+ r-cran-ggplot2 \
+ r-cran-glmnet \
+ r-cran-shiny \
+ r-cran-rmarkdown \
+ r-cran-rcpp \
+ r-cran-jsonlite \
+ r-cran-devtools \
+ r-cran-testthat \
+ r-cran-roxygen2 \
  gdebi-core \
  wget \
  openssh-server
