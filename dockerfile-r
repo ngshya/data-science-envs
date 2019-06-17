@@ -24,12 +24,10 @@ RUN apt -y install htop \
  r-cran-ggplot2 \
  r-cran-glmnet \
  r-cran-shiny \
- r-cran-rmarkdown \
  r-cran-rcpp \
  r-cran-jsonlite \
  r-cran-devtools \
  r-cran-testthat \
- r-cran-roxygen2 \
  gdebi-core \
  wget \
  openssh-server
