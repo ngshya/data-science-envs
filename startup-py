@@ -2,4 +2,4 @@
 
 systemctl enable ssh
 service ssh start
-# while true; do sleep 1d; done
+while true; do sleep 1d; done
